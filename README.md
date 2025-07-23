@@ -1,16 +1,16 @@
 # Cloud based voltage monitoring system
 
-Project Overview :-
+📌 Project Overview :-
 
 The Cloud-Based Voltage Monitoring System is an embedded systems project designed to measure DC voltage in real-time and display it both locally and remotely. It reads the voltage from a custom-built 0–30V power supply, displays the measured value on a 16×2 LCD screen, and simultaneously transmits the data to the ThingSpeak Cloud Platform via Wi-Fi using an ESP32 microcontroller. On ThingSpeak, users can monitor and visualize voltage trends through real-time graphs and analytics.
 
 
-Tools and Technologies Used :-
+🔧 Tools and Technologies Used :-
 
 ESP32, 16*2 LCD with I2C module, ThingSpeak Cloud (for data visualization and remote monitoring), Arduino IDE (for programming), Custom-designed 0–30V, 1A power supply.
 
 
-How It Works :-
+⚙️ How It Works :-
 
 Power Supply Design:- A 0–30V variable DC power supply was built using standard electronics components. The output voltage can be adjusted via a variable potentiometer.
 
@@ -21,7 +21,7 @@ Local Display:- The measured voltage is converted to actual voltage values using
 Cloud Transmission:- The ESP32 sends the real-time voltage values to the ThingSpeak cloud via Wi-Fi. The data is then visualized on a live graph, allowing remote monitoring.
 
 
-Real-World Applications :-
+🌐 Real-World Applications :-
 
 1) Remote Power System Monitoring:
 Monitor the output of power supplies, solar panels, or batteries in remote or hazardous environments.
@@ -36,6 +36,6 @@ Excellent for demonstrating ADC, IoT, and cloud integration concepts in electron
 Add cloud capabilities to traditional lab power supplies for logging and long-term monitoring.
 
 
-Limitation – ADC Non-linearity :-
+⚠️ Limitation – ADC Non-linearity :-
 
 While testing the system, one observed limitation is due to the non-linear characteristics of the ESP32 ADC (Analog-to-Digital Converter). Specifically, when measuring higher voltages through the voltage divider  the ESP32 ADC often reports a lower value than actual value.
