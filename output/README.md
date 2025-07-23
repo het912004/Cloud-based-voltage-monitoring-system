@@ -1,1 +1,1 @@
-this folder contains output values.
+this folder contains output.
